@@ -8,7 +8,7 @@ const toolbar = (props) => (
         <header className="Toolbar">
             <AnchorLink className="AnchorLink" href="#home"><h2>Philipp Hennersdorf</h2></AnchorLink>
             <nav>
-            <NavigationItems german={true}/>
+            <NavigationItems german={props.german} toggleLanguage={props.toggleLanguage}/>
             </nav>
         </header>
 );
