@@ -8,7 +8,7 @@ import Experience from './container/Experience/Experience';
 import Education from './container/Education/Education';
 import Contact from './components/Contact/ContactForm';
 
-class App extends Component () {
+class App extends Component {
 
   state = {
     german: true
