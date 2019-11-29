@@ -1,0 +1,38 @@
+.Toolbar {
+    height: 56px;
+    width: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: rgba(78, 85, 86, 0.9);
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:0 0px;
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+.Toolbar nav {
+    height: 100%;
+
+}
+.Toolbar .AnchorLink {
+   text-decoration: none;
+   padding-left: 25px;
+}
+
+.Toolbar h2 {
+    font-weight: 700;
+    color: white;
+}
+
+.Toolbar h2:hover {
+    color: #00aaff;
+}
+
+@media (max-width: 499px) {
+    .DesktopOnly {
+        display: none;
+    }
+}

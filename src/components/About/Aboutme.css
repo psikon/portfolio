@@ -1,0 +1,47 @@
+.AboutMe {
+    flex: 1;
+    flex-direction: 'row';
+    flex-wrap: 'wrap',;
+    align-items: 'flex-start';
+    padding:0 5rem;
+    background-color: whitesmoke ;
+    margin: 0 0;
+    padding: 1rem 5rem;
+}
+
+.AboutMe .image {
+    float: left;
+    width: 20%;
+	min-height: 1px;
+	padding-right:1rem;
+	padding-left: 1rem;
+    text-align: center;
+}
+
+.about-title {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.picture {
+    width:175;
+    border-radius: 50% ;
+    margin-top: 3rem;
+}
+
+.AboutMe h2 {
+    font-weight: 600;
+}
+
+text {
+    text-align: justify;
+    width: 80%;
+}
+
+.AboutMe .rightText {
+    text-align: end;
+}
+
