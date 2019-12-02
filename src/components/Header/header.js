@@ -11,14 +11,18 @@ const anchor = {
     padding: "10px 10px", 
     borderRadius: "15%",
 }
+
 const header = (props) => {
+    const welcome = (props.german) ? "Willkommen zu meinem Portfolio" : "Welcome to my portfolio";
+    const more = (props.german) ? "Weiterlesen" : "Read more";
+
     return (
         <section id="home">
             <div className="Header">
-                <p className="welcome">Welcome to my portfolio</p>
+                <p className="welcome">{welcome}</p>
                 <h1 className="title">Philipp Hennersdorf</h1>
                 <h2 className="subtitle">Dr. rer. nat.</h2>
-                <AnchorLink style={anchor} href="#aboutme">Read more</AnchorLink>
+                <AnchorLink style={anchor} href="#aboutme">{more}</AnchorLink>
                 <div className="social-media">
                     <button />
                     <button />

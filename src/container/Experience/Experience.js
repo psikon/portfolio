@@ -9,35 +9,58 @@ import FsuLogo from '../../resources/fsu-logo.jpg';
 
 export const data =[
     {
+        id: 4,
         name: "encoway GmbH",
         destination: "Bremen",
-        time: "2018 - now",
-        position:"Software Developer",
+        time_de: "2018 - heute",
+        time_en: "2018 - now",
+        position_de: "Software Entwickler",
+        position_en:"Software Developer",
         logo: EncowayLogo,
-        description: [
-            "test",
-            "test"
+        description_de: [
+            "Frontend Entwicklung mit React",
+            "Modifikation und Erweiterung einer bestenhenden Softwarelösung"
+        ],
+        description_en: [
+            "Frontend devolopment with React",
+            "Modification and Extension of Software"
         ]
     },
     {   
+        id: 3,
         name: "Bruker Daltonik GmbH",
         destination: "Bremen",
-        time: "2016 - 2018",
-        position: "Software Developer",
+        time_de: "2016 - 2018",
+        time_en: "2016 -2018",
+        position_de: "Software Entwickler",
+        position_en: "Software Developer",
         logo: BrukerLogo,
-        description: [
+        description_de: [
+            "Entwicklung von Client-Server Lösungen",
+            "Datenbankdesign und Implementierung",
+            "Design und Implementierung von Eclipse e4 GUI's",
+            "Testautomatisierung"
+        ],
+        description_en: [
             "Development of Client-Server Software",
             "Databasedesign and Development",
             "Design and Implementation of Eclipse e4 GUI's",
             "Testautomation"]
     },
-    {
+    {   
+        id: 2,
         name: "Leibniz Institute for Natural Product Research and Infection Biology Hans-Knöll-Institute",
         destination: "Jena",
         time: "2012 - 2015",
         position: "Doctoral Reasearcher",
         logo: HkiLogo,
-        description: [
+        description_de: [
+            "Biologische und statistische Asuwertung von Genomsequenzdatensätzen",
+            "Erstellung von wissentschaftlichen Publikationen",
+            "Durchführung von Vorlesungen und Seminaren",
+            "Betreuung von internationalen Masterstudenten"
+        ],
+        description_en: [
             "Biological and statistical analysis of sequencing data",
             "Preparation of scientific publications",
             "Performance of lectures and seminars",      
@@ -45,21 +68,26 @@ export const data =[
         ]
     },
     {
+        id: 1,
         name: "Friedrich Schiller University",   
         destination: "Jena",
-        time: "2013 - 2015",
+        time_de: "2013 - 2015",
+        time_en: "2013 - 2015",
         logo: FsuLogo,
-        position: "Research assistant",
-        description: ["Support for a visually handicapped student"]
+        position_de: "Hilfestellung und Betreuung einer blinden Studentin",
+        position_en: "Research assistant",
+        description_de: ["Hilfestellung und Betreuung einer blinden Studentin"],
+        description_en: ["Support for a visually handicapped student"]
     }];
 
-const experience = () => {
-    console.log(data)
+const experience = (props) => {
+    const title = props.german ? "Berufserfahrung" :"Experience";
+    
     return (
         <section id="experience" >
             <div className="Experience ">
-                <h2 className="experience-header">Experience</h2>
-                <TimeLine items={data} />
+                <h2 className="experience-header">{title}</h2>
+                <TimeLine items={data} german={props.german}/>
             </div>
         </section>
     )

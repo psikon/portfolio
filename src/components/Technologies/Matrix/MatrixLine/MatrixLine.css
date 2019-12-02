@@ -1,0 +1,29 @@
+.label-col {
+    width:40%;
+    text-align: left;
+}
+
+.skill-col {
+    width:60%
+}
+
+.skill-row {
+    widows: 200px;
+}
+.circle-filled {
+    height: 10px;
+    width: 10px;
+    background-color: #00aaff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 1px;
+}
+.circle-empty {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #00aaff;
+    background-color: white;
+    display: inline-block;
+    margin: 0 1px;
+}

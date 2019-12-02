@@ -7,33 +7,46 @@ import FsuLogo from '../../resources/fsu-logo.jpg'
 
 export const data =[
     {
+        id:2,
         name: "Leibniz Institute for Natural Product Research and Infection Biology Hans-Knöll-Institute",
         destination: "Jena",
-        time: "2012 - 2018",
+        time_de: "2012 - 2018",
+        time_en: "2012 - 2018",
         logo: HkiLogo,
-        position:"Promotion: Bioinformatics",
-        description: [
+        position_de: "Promotion: Bioinformatik",
+        position_en:"Promotion: Bioinformatics",
+        description_de: [
+            "Fachrichtung: Metagenomik",
+            "Titel: Comparative metagenomics of selected marine organisms of the Indopacific."
+        ],
+        description_en: [
             "Specialisation: Metagenomics",
             "Thesis: Comparative metagenomics of selected marine organisms of the Indopacific."
         ]
     },
     {   
+        id: 1,
         name: "Friedrich Schiller University",
         destination: "Jena",
-        time: "2007 - 2012",
-        position: "Diploma Bioinformatician",
+        time_de: "2007 - 2012",
+        time_en: "2007 - 2012",
+        position_de: "Displom Bioinformatiker",
+        position_en: "Diploma Bioinformatician",
         logo: FsuLogo,
-        description: [
-            "Diploma thesis: Funktionelle Analyse der Genexpression in humanen B-Lymphomazellen"]
+        description_de: [
+            "Diplomarbeit: Funktionelle Analyse der Genexpression in humanen B-Lymphomazellen" ],
+        description_en: [
+            "Diploma thesis: Funktionelle Analyse der Genexpression in humanen B-Lymphomazellen" ]
     }];
 
-const education = () => {
-    console.log(data)
+const education = (props) => {
+    const title = (props.german) ? "Studium" : "Education";
+
     return (
         <section id="education" >
             <div className="Education">
-                <h2 className="education-header">Education</h2>
-                <TimeLine items={data} />
+                <h2 className="education-header">{title}</h2>
+                <TimeLine items={data} german={props.german}/>
             </div>
         </section>
     )

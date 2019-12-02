@@ -1,0 +1,14 @@
+.Technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: white;
+    width:100%
+}
+
+
+.Technologies .technologies-header {
+    text-transform: uppercase !important;
+    font-size: 35px;
+    margin-top: 0;
+}
