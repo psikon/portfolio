@@ -1,15 +1,18 @@
 import React from 'react';
 
-import './Matrix.css'
+import './Matrix.css';
 import MatrixLine from './MatrixLine/MatrixLine';
 
 const matrix = (props) => {
-    const skills = props.items.map(el => <MatrixLine label={el.item} skill={el.skill}/>);
+    const skills = props.items.map(el => <MatrixLine key={el.item} label={el.item} skill={el.skill}/>);
     return (
-        <div>
-            <table className="Matrix">
-            <h2>{props.label}</h2>
-                {skills}
+        <div className="child">
+            <h2 className="matrix-title">{props.label}</h2>
+            <table>
+               <tbody>
+                   {skills}
+               </tbody>
+                
             </table>
         </div>
     )

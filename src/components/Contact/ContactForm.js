@@ -14,8 +14,8 @@ const contactForm = (props) => {
             <div className="ContactForm">
                 <h1 className="contact-title">{title}</h1>
                 <input className="input" type="text" placeholder={name} />
-                <input type="text" placeholder={email} />
-                <textarea  placeholder={message} />
+                <input className="input" type="text" placeholder={email} />
+                <textarea  type="text" placeholder={message} />
                 <button type="submit"className="btn-send">{sent}</button>
             </div>
         </div>

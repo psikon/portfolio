@@ -57,7 +57,6 @@ const en = () => {
 };
 
 const aboutMeText = ( props) => {
-    console.log(props.german)
     const text = (props.german) ? de() : en();
     return text;
 }

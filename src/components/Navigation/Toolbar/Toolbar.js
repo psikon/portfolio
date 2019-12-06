@@ -5,7 +5,6 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const toolbar = (props) => {
-    console.log(props)
     return (
         <header className="Toolbar">
             <AnchorLink className="AnchorLink" href="#home"><h2>Philipp Hennersdorf</h2></AnchorLink>

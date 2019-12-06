@@ -5,9 +5,9 @@ import ListItem from './ListItem/ListItem'
 
 const list = (props) => {
     return (
-        <div>
-            <h2>{props.label}</h2>
-            {props.items.map(item => <ListItem german="true" item={item} />)}
+        <div className="child">
+            <h2 className="list-title">{props.label}</h2>
+            {props.items.map(item => <ListItem key={item} german="true" item={item} />)}
         </div>);
     
 }

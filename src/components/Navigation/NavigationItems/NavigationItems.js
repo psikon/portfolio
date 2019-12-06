@@ -6,7 +6,6 @@ import DeLogo from '../../../resources/german.jpg'
 import EnLogo from '../../../resources/englisch.jpg'
 
 const navigationItems = (props) => {
-    console.log(props)
     const navigation = props.german ? (
         <ul className="NavigationItems">
             <NavigationItem link="#technologies" >Technologien</NavigationItem>

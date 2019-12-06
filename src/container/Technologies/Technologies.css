@@ -1,7 +1,4 @@
 .Technologies {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     background-color: white;
     width:100%
 }
@@ -12,3 +9,25 @@
     font-size: 35px;
     margin-top: 0;
 }
+
+.Technologies .parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child {
+    display: inline-block;
+    background-color: white;
+    margin: 1% 1% 1% 1%;
+    flex-grow: 1;
+    max-width: 250px;
+}
+
+.child-skills {
+    display: inline-block;
+    background-color: white;
+    margin: 1% 1% 1% 1%;
+    flex-grow: 1;
+}
+
+  

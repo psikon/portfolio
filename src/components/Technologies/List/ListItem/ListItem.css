@@ -1,0 +1,11 @@
+.list {
+    text-align: left;
+    
+}
+
+.list-icon {
+    color: #00aaff;
+    width: 15;
+    height: 15px;
+    padding: 2px 4px;
+}

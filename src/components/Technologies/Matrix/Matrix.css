@@ -1,6 +1,5 @@
-.Matrix {
-    display: table;
-    align-content: center;
-    padding: 50px 20px;
-    width:100%;
+.matrix-title {
+    text-transform: uppercase !important;
+    font-size: 24px;
+    margin: 0;
 }

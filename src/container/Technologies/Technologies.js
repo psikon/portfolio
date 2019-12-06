@@ -15,7 +15,7 @@ const data = {
     framework: [ 
         {item: "Spring", skill: 5},
         {item: "Hibernate", skill: 4},
-        {item: "Eclipse e4 SWT", skill: 4}
+        {item: "Eclipse e4", skill: 4}
     ],
     deploy: ["Maven","Jenkins","Bamboo","Docker"
     ],
@@ -55,17 +55,22 @@ const technologies = (props) => {
         <section id="technologies">
             <div className="Technologies">
                 <h2 className="technologies-header">Technologies</h2>
-                <Matrix label="Languages" items={data.languages}/> 
-                <Matrix label="Frameworks" items= {data.framework} /> 
-                <List label="Databases" items= {data.databases} />
-                <List label="Build and Deploy" items= {data.deploy} />
-                <List label="Software" items= {data.software} />
-                <List label="Operating Systems" items= {data.operationSystems} />
-                <List label="IDE" items= {data.ide} />
-                <List label="Version Control" items= {data.vs} />
+                <div className="parent">
+                    <Matrix className="child" label="Languages" items={data.languages}/> 
+                    <Matrix className="child" label="Frameworks" items= {data.framework} /> 
+                    <List className="child" label="Databases" items= {data.databases} />
+                    <List className="child" label="Build and Deploy" items= {data.deploy} />
+                    <List className="child" label="Software" items= {data.software} />
+                    <List className="child" label="Operating Systems" items= {data.operationSystems} />
+                    <List className="child" label="IDE" items= {data.ide} />
+                    <List className="child" label="Version Control" items= {data.vs} />
+                </div>
             </div>
             <div>
                 <h2 className="technologies-header">Skills</h2>
+                <div>
+                    <List className="list-skills" label="" items={skills} />
+                </div>
             </div>
             <div>
                 <h2 className="technologies-header">Languages</h2>
