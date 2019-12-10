@@ -1,0 +1,47 @@
+.About {
+    width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto
+}
+
+.About .row {
+    display: flex;
+    display: -webkit-box;
+	display: -ms-flexbox;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+    margin-right: -15px;
+	margin-left: -15px
+}
+
+.About .col {
+    position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px
+}
+
+.About .col-left {
+    -webkit-box-flex: 0;
+	-ms-flex: 0 0 20%;
+	flex: 0 0 20%;
+	max-width: 20%
+}
+
+.About .col-right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%
+}
+
+.picture {
+    border-radius: 50% ;
+    margin-top: 5rem;
+}
+
+
+

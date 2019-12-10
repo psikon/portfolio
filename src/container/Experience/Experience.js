@@ -84,9 +84,9 @@ const experience = (props) => {
     const title = props.german ? "Berufserfahrung" :"Experience";
     
     return (
-        <section id="experience" >
+        <section id="experience" className="dark-background">
             <div className="Experience ">
-                <h2 className="experience-header">{title}</h2>
+                <h2 className="section-header text-uppercase">{title}</h2>
                 <TimeLine items={data} german={props.german}/>
             </div>
         </section>

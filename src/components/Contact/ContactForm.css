@@ -1,6 +1,5 @@
 .Contact {
     width: 100%;
-    background-color: WhiteSmoke ;
 }
 .ContactForm {
     margin: 20px auto;
@@ -9,12 +8,6 @@
     padding: 10px;
     box-sizing: border-box;
 
-}
-
-.contact-title {
-    text-transform: uppercase !important;
-    font-size: 35px;
-    margin-top: 0;
 }
 
 .ContactForm input {

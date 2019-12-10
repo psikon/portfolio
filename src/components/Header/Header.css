@@ -12,34 +12,69 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin: 0;
-    }
+}
 
-.welcome {
+
+.Header .welcome {
     margin: 0 0;
     font-weight: 600;
     font-size: 20px;
     font-style: italic;
     line-height:22px;
-    padding-top:6rem;
+	padding-top: 80px;
+	padding-bottom: 65px
 }
 
-.title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 50px;
-    margin: 0 0;
-    padding-top:0.5rem;
+.Header .title {
+	line-height: 50px;
+	margin-bottom: 25px;
+	font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
-.subtitle {
-    font-weight: 400;
-    font-size: 24;
-    margin: 0 0;
-    padding-top:0.5rem;
-    padding-bottom:1.5rem;
+.Header .subtitle {
+    margin: .8rem 0;
+    padding-bottom: 1.5rem;
+} 
+
+
+.social-buttons li a {
+    margin: 1rem 0.3rem;
+    padding: 0 0;
+	font-size: 20px;
+	line-height: 40px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+	color: #fff;
+	border-radius: 100%;
+	outline: 0;
+	background-color: #212529
 }
 
-.social-media {
-    padding-top: 20px;
+.social-buttons li a:active, .social-buttons li a:focus, .social-buttons li a:hover
+	{
+	background-color: #66c2ff
+}
+
+.btn-primary {
+    color: white;
+    background-color: #0099ff;
+    border-color: #0099ff;
+    font-style: bold;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 0%;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+	background-color: #66c2ff !important;
+	border-color: #66c2ff !important;
+	color: #fff
+}
+
+.social-icon {
+  background-color: transparent;
 }

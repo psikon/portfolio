@@ -3,6 +3,14 @@ import React from 'react';
 import './Technologies.css';
 import Matrix from '../../components/Technologies/Matrix/Matrix';
 import List from '../../components/Technologies/List/List';
+import { faCode } from '@fortawesome/free-solid-svg-icons'
+import { faCog} from '@fortawesome/free-solid-svg-icons'
+import { faCogs} from '@fortawesome/free-solid-svg-icons'
+import { faDatabase} from '@fortawesome/free-solid-svg-icons'
+import { faCodeBranch} from '@fortawesome/free-solid-svg-icons'
+import { faWindowRestore} from '@fortawesome/free-solid-svg-icons'
+import { faDesktop} from '@fortawesome/free-solid-svg-icons'
+import { faCodepen} from '@fortawesome/free-brands-svg-icons'
 
 const data = {
     languages: [
@@ -52,28 +60,28 @@ const languages = [
 
 const technologies = (props) => {
     return (
-        <section id="technologies">
+        <section id="technologies" className="light-background">
             <div className="Technologies">
-                <h2 className="technologies-header">Technologies</h2>
+                <h2 className="section-header text-uppercase">Technologies</h2>
                 <div className="parent">
-                    <Matrix className="child" label="Languages" items={data.languages}/> 
-                    <Matrix className="child" label="Frameworks" items= {data.framework} /> 
-                    <List className="child" label="Databases" items= {data.databases} />
-                    <List className="child" label="Build and Deploy" items= {data.deploy} />
-                    <List className="child" label="Software" items= {data.software} />
-                    <List className="child" label="Operating Systems" items= {data.operationSystems} />
-                    <List className="child" label="IDE" items= {data.ide} />
-                    <List className="child" label="Version Control" items= {data.vs} />
+                    <Matrix className="child" label="Languages" items={data.languages} icon={faCode} offset="3px"/> 
+                    <Matrix className="child" label="Frameworks" items= {data.framework} icon={faCog} offset="7px"/> 
+                    <List className="child" label="Databases" items= {data.databases} icon={faDatabase} offset="8px"/>
+                    <List className="child" label="Build and Deploy" items= {data.deploy} icon={faCogs} offset="2px"/>
+                    <List className="child" label="Software" items= {data.software} icon={faWindowRestore} offset="5px"/>
+                    <List className="child" label="Operating Systems" items= {data.operationSystems} icon={faDesktop} offset="5px"/>
+                    <List className="child" label="Development Environment" items= {data.ide} icon={faCodepen} offset="5px"/>
+                    <List className="child" label="Version Control" items= {data.vs} icon={faCodeBranch} offset="12px"/>
                 </div>
             </div>
             <div>
-                <h2 className="technologies-header">Skills</h2>
+                <h2 className="technologies-header text-uppercase">Skills</h2>
                 <div>
                     <List className="list-skills" label="" items={skills} />
                 </div>
             </div>
             <div>
-                <h2 className="technologies-header">Languages</h2>
+                <h2 className="technologies-header text-uppercase">Languages</h2>
             </div>
         </section>
     );

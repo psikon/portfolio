@@ -1,7 +1,9 @@
 .list {
     text-align: left;
-    
+    padding-left: 1em;
+    padding-top: .3em;
 }
+
 
 .list-icon {
     color: #00aaff;

@@ -1,33 +1,61 @@
-.Technologies {
-    background-color: white;
-    width:100%
-}
-
-
-.Technologies .technologies-header {
-    text-transform: uppercase !important;
-    font-size: 35px;
-    margin-top: 0;
-}
-
 .Technologies .parent {
     display: flex;
     flex-wrap: wrap;
+    margin: 0px 100px;
 }
 
-.child {
+.Technologies .child {
     display: inline-block;
     background-color: white;
     margin: 1% 1% 1% 1%;
     flex-grow: 1;
-    max-width: 250px;
+    flex: 1 0 25%;
 }
 
-.child-skills {
+.Technologies .child-skills {
     display: inline-block;
     background-color: white;
     margin: 1% 1% 1% 1%;
     flex-grow: 1;
 }
 
+@media ( max-width :900px) {
+	.Technologies .child {
+		flex: 1 0 50%;
+	}
+}
+
+.Technologies .row {
+    display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+    margin-left: -15px;
+    height:64px;
+}
+
+
+
+.Technologies .col-25 {
+    text-align: left;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.Technologies .col-75 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    max-width: 80%;
+}
+
+.Technologies .list-item {
+    border-bottom: 1px solid lightgray;
+    padding-right: 10px;
+    margin-left: -25px
+}
   

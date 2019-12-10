@@ -9,10 +9,10 @@ const contactForm = (props) => {
     const sent = (props.german) ? "Sende Nachricht" : "Send message"
 
     return (
-    <section id="contact">
+    <section className="dark-background" id="contact">
         <div className="Contact">
-            <div className="ContactForm">
-                <h1 className="contact-title">{title}</h1>
+            <div className="ContactForm ">
+                <h1 className="section-header text-uppercase">{title}</h1>
                 <input className="input" type="text" placeholder={name} />
                 <input className="input" type="text" placeholder={email} />
                 <textarea  type="text" placeholder={message} />

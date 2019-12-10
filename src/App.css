@@ -2,6 +2,27 @@
   text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem
+}
+
+section {
+	padding: 60px 0;
+}
+
+@media ( min-width :768px) {
+	section {
+		padding: 55px 0
+	}
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -12,4 +33,88 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.section-heading {
+  font-size: 35px;
+  margin-top: 0;
+}
+
+.subsection-header {
+  font-size: 24px;
+  margin: 0;
+}
+
+.light-background {
+  background-color: white;
+}
+
+.dark-background {
+  background-color: whitesmoke;
+}
+
+.primary-background {
+  background-color: #0099ff;
+}
+
+.circle {
+  border-radius: 100%;
+}
+
+.text-lowercase {
+	text-transform: lowercase !important
+}
+
+.text-uppercase {
+	text-transform: uppercase !important
+}
+
+.text-capitalize {
+	text-transform: capitalize !important
+}
+
+.text-left {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: end;
+}
+
+.text-muted {
+	color: #6c757d !important
+}
+
+.text-primary {
+  color: #0099ff;
+}
+
+.font-weight-light {
+	font-weight: 300 !important
+}
+
+.font-weight-normal {
+	font-weight: 400 !important
+}
+
+.font-weight-bold {
+	font-weight: 700 !important
+}
+
+.list-inline {
+	padding-left: 0;
+	list-style: none
+}
+
+.list-inline-item {
+	display: inline-block
+}
+
+.list-inline-item:not (:last-child ){
+	margin-right: .5rem
+}
+
 
