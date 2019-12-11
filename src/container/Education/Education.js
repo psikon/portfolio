@@ -30,7 +30,7 @@ export const data =[
         destination: "Jena",
         time_de: "2007 - 2012",
         time_en: "2007 - 2012",
-        position_de: "Displom Bioinformatiker",
+        position_de: "Diplom Bioinformatiker",
         position_en: "Diploma Bioinformatician",
         logo: FsuLogo,
         description_de: [
@@ -45,7 +45,7 @@ const education = (props) => {
     return (
         <section id="education" >
             <div className="Education">
-                <h2 className="secction-header text-uppercase">{title}</h2>
+                <h2 className="section-header text-uppercase">{title}</h2>
                 <TimeLine items={data} german={props.german}/>
             </div>
         </section>

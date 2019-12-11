@@ -77,7 +77,7 @@ const technologies = (props) => {
             <div>
                 <h2 className="technologies-header text-uppercase">Skills</h2>
                 <div>
-                    <List className="list-skills" label="" items={skills} />
+                    <List className="child-skills" label="" items={skills} />
                 </div>
             </div>
             <div>

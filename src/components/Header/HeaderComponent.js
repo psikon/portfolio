@@ -7,31 +7,29 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faXing } from '@fortawesome/free-brands-svg-icons'
 
-const header = (props) => {
-    const welcome = (props.german) ? "Willkommen zu meinem Portfolio" : "Welcome to my portfolio";
-    const more = (props.german) ? "Weiterlesen" : "Read more";
-
+const headerComp = (props) => {
+    
     return (
         <section className="Header" id="home">
             <div className="Header">
-                <p className="welcome">{welcome}</p>
+                <p className="welcome">{props.welcome}</p>
                 <h1 className="section-heading font-weight-bold title">Philipp Hennersdorf</h1>
-                <h2 className="subsection-header font-weight-normal subtitle">Dr. rer. nat.</h2>
-                <AnchorLink className="btn-primary" href="#about">{more}</AnchorLink>
+                <h2 className="subsection-header font-weight-normal subtitle">{props.title}</h2>
+                <AnchorLink className="btn-primary" href="#about">{props.more}</AnchorLink>
                 <div className="list-inline text-center social-buttons">
                     <ul>
                         <li className="list-inline-item text-center">
-                            <a href="https://github.com/psikon">
+                            <a href={props.github}>
                                 <FontAwesomeIcon icon={faGithub} size="lg"/>
 							</a>
                         </li>
                         <li className="list-inline-item text-center">
-                            <a href="https://www.linkedin.com/in/philipp-hennersdorf-282033104/">
+                            <a href={props.linkedIn}>
                                 <FontAwesomeIcon icon={faLinkedin} size="lg"/>
 							</a>
                         </li>
                         <li className="list-inline-item text-center">
-                            <a href="https://www.xing.com/profile/Philipp_Hennersdorf/cv?sc_o=mxb_p">
+                            <a href={props.xing}>
                                 <FontAwesomeIcon icon={faXing} size="lg"/>
                             </a>
                         </li>
@@ -42,4 +40,4 @@ const header = (props) => {
     )
 }
 
-export default header;
+export default headerComp;

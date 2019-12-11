@@ -4,7 +4,7 @@ import './ListItem.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons'
 
-const listItem = (props) => {
+const listItem = (props) => { 
     return (
         <div className="list">
              <span className="list-item">
@@ -12,6 +12,7 @@ const listItem = (props) => {
                 {props.item}
             </span>
         </div>
+        
     )
 }
 

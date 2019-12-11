@@ -1,11 +1,12 @@
 
 .label-col {
-    width:25%;
+    width:20%;
     text-align: left;
+    padding-right: 5px;
 }
 
 .skill-col {
-    width:75%;
+    width:80%;
 }
 
 .matrix-icon {

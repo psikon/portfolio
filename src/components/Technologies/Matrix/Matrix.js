@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './Matrix.css';
 import MatrixLine from './MatrixLine/MatrixLine';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircle } from '@fortawesome/free-regular-svg-icons'
@@ -17,7 +16,7 @@ const matrix = (props) => {
                     </span>
                 </div>
                 <div className="col-75" > 
-                    <h2 className="subsection-header text-uppercase">{props.label}</h2>
+                    <h2 className="subsection-header text-uppercase text-left">{props.label}</h2>
                 </div>
             </div>
             <table>

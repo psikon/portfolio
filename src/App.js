@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 
 import './App.css';
 import ToolBar from "./components/Navigation/Toolbar/Toolbar"
-import Header from './components/Header/header';
+import Header from './container/Header/Header';
 import About from './container/About/About';
 import Technologies from './container/Technologies/Technologies';
 import Experience from './container/Experience/Experience';
 import Education from './container/Education/Education';
-import Contact from './components/Contact/ContactForm';
+import Contact from './container/Contact/Contact';
+import Footer from './container/Footer/Footer';
 
 class App extends Component {
 
@@ -30,6 +31,7 @@ class App extends Component {
         <Experience german={this.state.german}/>
         <Education german={this.state.german}/>
         <Contact german={this.state.german}/>
+        <Footer german={this.props.german} />
       </div>
     )
   };
