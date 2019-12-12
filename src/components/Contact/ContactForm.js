@@ -11,7 +11,7 @@ const contactForm = (props) => {
                 <input className="input" type="text" placeholder={props.name} />
                 <input className="input" type="text" placeholder={props.email} />
                 <textarea  type="text" placeholder={props.message} />
-                <button type="submit"className="btn-send">{props.sendButton}</button>
+                <button type="submit"className="btn-primary">{props.sendButton}</button>
             </div>
         </div>
     </section>);

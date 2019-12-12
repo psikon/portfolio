@@ -19,17 +19,17 @@ const headerComp = (props) => {
                 <div className="list-inline text-center social-buttons">
                     <ul>
                         <li className="list-inline-item text-center">
-                            <a href={props.github}>
+                            <a href={props.github} target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faGithub} size="lg"/>
 							</a>
                         </li>
                         <li className="list-inline-item text-center">
-                            <a href={props.linkedIn}>
+                            <a href={props.linkedIn} target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin} size="lg"/>
 							</a>
                         </li>
                         <li className="list-inline-item text-center">
-                            <a href={props.xing}>
+                            <a href={props.xing} target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faXing} size="lg"/>
                             </a>
                         </li>

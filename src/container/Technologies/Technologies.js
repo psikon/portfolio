@@ -58,6 +58,7 @@ const languages = [
     {item: "Spanish", skill: "Basic level"}]
 
 
+
 const technologies = (props) => {
     return (
         <section id="technologies" className="light-background">
@@ -74,14 +75,17 @@ const technologies = (props) => {
                     <List className="child" label="Version Control" items= {data.vs} icon={faCodeBranch} offset="12px"/>
                 </div>
             </div>
-            <div>
+            <div className="space">
                 <h2 className="technologies-header text-uppercase">Skills</h2>
-                <div>
+                <div className="parent">
                     <List className="child-skills" label="" items={skills} />
                 </div>
             </div>
-            <div>
+            <div className="space">
                 <h2 className="technologies-header text-uppercase">Languages</h2>
+                <div>
+                    
+                </div>
             </div>
         </section>
     );

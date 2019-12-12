@@ -16,7 +16,6 @@ const Header = (props) => {
         github={githubUrl}
         linkedIn={linkedInUrl}
         xing={xingUrl}/>
-
 }
 
 export default Header;

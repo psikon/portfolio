@@ -14,14 +14,9 @@ p {
 }
 
 section {
-	padding: 60px 0;
+	padding: 55px 0;
 }
 
-@media ( min-width :768px) {
-	section {
-		padding: 55px 0
-	}
-}
 
 .App-header {
   background-color: #282c34;
@@ -115,6 +110,29 @@ section {
 
 .list-inline-item:not (:last-child ){
 	margin-right: .5rem
+}
+
+.btn-primary {
+  background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	padding: 0.8rem 1rem;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	transition: 0.2s ease-in-out;
+	letter-spacing: 2px;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+background-color: #66c2ff !important;
+border-color: #66c2ff !important;
+color: #fff
+}
+
+.space {
+	padding-top: 30px;
 }
 
 

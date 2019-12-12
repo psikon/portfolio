@@ -2,9 +2,37 @@
     color: white;
     width: 100%;
     background-color: rgba(78, 85, 86, 0.9);
+    height: 120px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.Footer .content  {
     display:flex;
     justify-content: space-between;
     align-items:center;
-    padding:0 0px;
     box-sizing: border-box;
+    line-height: .5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    margin: 0 0;
+}
+
+.Footer .copyright {
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+.Footer .btn-primary {
+    background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	padding: 0.8rem 1rem;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	transition: 0.2s ease-in-out;
+	letter-spacing: 2px;
 }

@@ -54,9 +54,8 @@
 	background-color: #212529
 }
 
-.social-buttons li a:active, .social-buttons li a:focus, .social-buttons li a:hover
-	{
-	background-color: #66c2ff
+.social-buttons li a:active, .social-buttons li a:focus, .social-buttons li a:hover {
+    background-color: #66c2ff;
 }
 
 .btn-primary {
@@ -65,8 +64,6 @@
     border-color: #0099ff;
     font-style: bold;
     text-decoration: none;
-    padding: 10px 10px;
-    border-radius: 0%;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {

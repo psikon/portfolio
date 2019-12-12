@@ -31,7 +31,7 @@ class App extends Component {
         <Experience german={this.state.german}/>
         <Education german={this.state.german}/>
         <Contact german={this.state.german}/>
-        <Footer german={this.props.german} />
+        <Footer german={this.state.german} />
       </div>
     )
   };
