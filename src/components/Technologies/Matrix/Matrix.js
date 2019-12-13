@@ -7,8 +7,8 @@ import { faCircle } from '@fortawesome/free-regular-svg-icons'
 const matrix = (props) => {
     const skills = props.items.map(el => <MatrixLine key={el.item} label={el.item} skill={el.skill}/>);
     return (
-        <div className="child container">
-             <div className="item row">
+        <div className="child">
+             <div className="fixed-width row">
                 <div className="col-25">
                     <span className="fa-layers fa-fw text-primary">
                         <FontAwesomeIcon className="primary-background circle" icon={faCircle} size="2x"/>

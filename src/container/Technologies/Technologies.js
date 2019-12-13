@@ -65,26 +65,26 @@ const technologies = (props) => {
             <div className="Technologies">
                 <h2 className="section-header text-uppercase">Technologies</h2>
                 <div className="parent">
-                    <Matrix className="child" label="Languages" items={data.languages} icon={faCode} offset="3px"/> 
-                    <Matrix className="child" label="Frameworks" items= {data.framework} icon={faCog} offset="7px"/> 
-                    <List className="child" label="Databases" items= {data.databases} icon={faDatabase} offset="8px"/>
-                    <List className="child" label="Build and Deploy" items= {data.deploy} icon={faCogs} offset="2px"/>
-                    <List className="child" label="Software" items= {data.software} icon={faWindowRestore} offset="5px"/>
-                    <List className="child" label="Operating Systems" items= {data.operationSystems} icon={faDesktop} offset="5px"/>
-                    <List className="child" label="Development Environment" items= {data.ide} icon={faCodepen} offset="5px"/>
-                    <List className="child" label="Version Control" items= {data.vs} icon={faCodeBranch} offset="12px"/>
+                    <Matrix label="Languages" items={data.languages} icon={faCode} offset="3px"/> 
+                    <Matrix label="Frameworks" items= {data.framework} icon={faCog} offset="7px"/>
+                    <List label="Databases" items= {data.databases} icon={faDatabase} offset="8px" tech={true}/>
+                    <List label="Build and Deploy" items= {data.deploy} icon={faCogs} offset="2px" tech={true}/>
+                    <List label="Software" items= {data.software} icon={faWindowRestore} offset="5px" tech={true}/>
+                    <List label="Operating Systems" items= {data.operationSystems} icon={faDesktop} offset="5px" tech={true}/>
+                    <List label="Development Environment" items= {data.ide} icon={faCodepen} offset="5px" tech={true}/>
+                    <List label="Version Control" items= {data.vs} icon={faCodeBranch} offset="12px" tech={true}/>
                 </div>
             </div>
             <div className="space">
                 <h2 className="technologies-header text-uppercase">Skills</h2>
                 <div className="parent">
-                    <List className="child-skills" label="" items={skills} />
+                    <List items={skills} skills={true}/>
                 </div>
             </div>
             <div className="space">
                 <h2 className="technologies-header text-uppercase">Languages</h2>
                 <div>
-                    
+                    <List items={languages} language={true} />
                 </div>
             </div>
         </section>

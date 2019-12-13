@@ -6,22 +6,20 @@
 
 .Technologies .child {
     display: inline-block;
-    background-color: white;
-    margin: 1% 1% 1% 1%;
+    margin: 1% 1% 4% 4%;
     flex-grow: 1;
-    flex: 1 0 25%;
+    flex: 1 0 20%;
 }
 
-.Technologies .child-skills {
-    display: inline-block;
-    background-color: white;
-    margin: 1% 1% 1% 1%;
-    flex-grow: 1;
-}
-
-@media ( max-width :900px) {
+@media ( max-width :1050px) {
 	.Technologies .child {
-		flex: 1 0 10%;
+		flex: 1 0 8%;
+	}
+}
+
+@media ( max-width :1050px) {
+	.Technologies .child {
+		flex: 1 0 5%;
 	}
 }
 
@@ -29,8 +27,6 @@
     display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
 	margin-right: -15px;
     margin-left: -15px;
     height:64px;
@@ -41,7 +37,6 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
-    max-width: 20%;
     margin-top: 15px;
 }
 
@@ -49,19 +44,8 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 80%;
     flex: 0 0 80%;
-    max-width: 80%;
 }
 
-.Technologies .list-item {
-    border-bottom: 1px solid lightgray;
-}
 
-tr {
-    border-bottom: 1px solid lightgray;
-}
 
-.Technologies .child-skills {
-    border: 1px solid pink;
-
-}
   

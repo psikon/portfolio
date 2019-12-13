@@ -113,7 +113,7 @@ section {
 }
 
 .btn-primary {
-  background: transparent;
+  	background: transparent;
 	color: #fff;
 	border: 2px solid #fff;
 	border-radius: 50px;
@@ -126,9 +126,9 @@ section {
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-background-color: #66c2ff !important;
-border-color: #66c2ff !important;
-color: #fff
+	background-color: #66c2ff !important;
+	border-color: #66c2ff !important;
+	color: #fff
 }
 
 .space {
