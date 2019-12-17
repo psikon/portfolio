@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './Toolbar.css';
+import '../SideDrawer/SideDrawer'
 import NavigationItems from '../NavigationItems/NavigationItems';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 

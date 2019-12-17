@@ -3,8 +3,7 @@
     width: 100%;
     background-color: rgba(78, 85, 86, 0.9);
     height: 120px;
-    padding-bottom: 0;
-    padding-top: 0;
+    padding: 0 0;
 }
 
 .Footer .content  {
@@ -35,4 +34,37 @@
 	position: relative;
 	transition: 0.2s ease-in-out;
 	letter-spacing: 2px;
+}
+
+@media (max-width:500px) {
+    .Footer {
+        height: 200px;
+        padding: 0 0;
+    }
+    
+    .Footer .content  {
+        display:flex;
+        flex-direction: column;
+        line-height: .05rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 0 0;
+    }
+
+    .Footer ul {
+        margin: 0 0;
+    }
+    
+    .Footer .copyright {
+        padding-top: 10px;
+        font-size: 10px;
+    }
+    
+    .Footer .btn-primary {
+        border: 2px solid #fff;
+        padding: 0.8rem 1rem;
+        
+
+    }
+    
 }

@@ -66,6 +66,10 @@
 .ContactForm .btn-primary:hover {
     color: white;
 }
+.ContactForm .btn-primary:disabled {
+    color: darkgray;
+    border: 2px solid darkgray;
+}
 
 
 @media (min-width: 600px) {

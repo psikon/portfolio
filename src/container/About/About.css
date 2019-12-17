@@ -1,46 +1,61 @@
 .About {
     width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding: 0 15px;
 	margin-right: auto;
 	margin-left: auto
 }
 
 .About .row {
-    display: flex;
-    display: -webkit-box;
-	display: -ms-flexbox;
-	-ms-flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
-    margin-right: -15px;
-	margin-left: -15px
-}
-
-.About .col {
-    position: relative;
 	width: 100%;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px
+	padding: 0 25px;
 }
 
 .About .col-left {
-    -webkit-box-flex: 0;
-	-ms-flex: 0 0 20%;
-	flex: 0 0 20%;
-	max-width: 20%
+  max-width: 20%;
 }
 
 .About .col-right {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
-    max-width: 75%
+	margin-left: 15px;
+	max-width: 70%
 }
 
 .picture {
     border-radius: 50% ;
-    margin-top: 5rem;
+	margin-top: 5rem;
+	width: 175px;
+}
+
+@media (max-width:1000px) {
+	.picture {
+		margin-top: 0;
+		width:125px
+	}
+
+	.About .row {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	.About .col-left {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 50px;
+		width: 50%;
+		max-width: 50%;
+	}
+
+	.About .col-right {
+		margin: 15px 15px;
+		padding-right: 50px;
+		max-width: 90%
+	}
 }
 
 

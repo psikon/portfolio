@@ -23,6 +23,7 @@
 }
 
 .Toolbar h2 {
+    padding-top: 10px;
     font-weight: 700;
     color: white;
 }
@@ -31,8 +32,19 @@
     color: #00aaff;
 }
 
-@media (max-width: 499px) {
-    .DesktopOnly {
-        display: none;
+@media (max-width: 1050px) {
+    .Toolbar h2 {
+        padding-top:10px;
+        font-size: 26px;
+        color: white;
+    }
+}
+
+@media (max-width: 965px) {
+    .Toolbar h2 {
+        padding-top:10px;
+        font-weight: 600;
+        font-size: 24px;
+        color: white;
     }
 }

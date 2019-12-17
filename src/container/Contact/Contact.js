@@ -1,22 +1,82 @@
-import React from 'react';
+import React,{ Component } from 'react';
+import axios from "axios";
 
 import ContactForm from '../../components/Contact/ContactForm';
 
-const contact = (props) => {
+class Contact extends Component {
 
-    const title = (props.german) ? "Kontakt" : "Contact";
-    const name = (props.german) ? "Ihr Name": "Your name";
-    const email = (props.german) ? "Ihre E-Mail Adresse" : "Your e-mail address";
-    const message = (props.german) ? "Ihre Nachricht" : "Your message";
-    const sendButton = (props.german) ? "Sende Nachricht" : "Send message";
+    constructor(props) {
+        super(props)
+        this.state = {
+            inputs: {
+                name: "",
+                email: "",
+                message: ""
+            },
+            status: true,
+            errorMessage: null
+        }
+        this.handleOnChange = this.handleOnChange.bind(this);
+	    this.handleOnSubmit = this.handleOnSubmit.bind(this);
+    }
 
-    return (<ContactForm 
-        title={title} 
-        name={name} 
-        email={email} 
-        message={message}
-        sendButton={sendButton}
-    />)
+    toggleSubmitButton = (event) => {
+        if (this.state.inputs.name === '' || this.state.inputs.email === '' || this.state.inputs.message === '') {
+           
+            return "disabled";
+        }
+        return ""
+    }
+
+    handleOnChange = (event) => {
+        const input = {...this.state.inputs, [event.target.id]:event.target.value};
+        this.setState({
+            inputs: input
+        });
+        console.log(this.state)
+    }
+
+
+    handleOnSubmit = event => {
+        const templateId = 'template_id';
+
+	    this.sendFeedback(templateId, {message_html: this.state.inputs.message, from_name: this.state.inputs.name, reply_to: this.state.inputs.email})
+      };
+
+    sendFeedback (templateId, variables) {
+        window.emailjs.send(
+          'gmail', templateId,
+          variables
+          ).then(res => {
+            console.log('Email successfully sent!')
+          })
+          // Handle errors here however you like, or use a React error boundary
+          .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+      }
+    
+    render() {
+        const title = (this.props.german) ? "Kontakt" : "Contact";
+        const name = (this.props.german) ? "Ihr Name": "Your name";
+        const email = (this.props.german) ? "Ihre E-Mail Adresse" : "Your e-mail address";
+        const message = (this.props.german) ? "Ihre Nachricht" : "Your message";
+        const sendButton = (this.props.german) ? "Sende Nachricht" : "Send message";
+
+        return (<ContactForm 
+            title={title} 
+            value={this.state.inputs}
+            onChange={this.handleOnChange}
+            sendButton={sendButton}
+            sendStatus={this.toggleSubmitButton()}
+            onClickSend={this.handleOnSubmit}
+            namePlaceholder={name} 
+            emailPlaceholder={email} 
+            messagePlaceholder={message}
+            status={this.state.status}
+            errorMessage={this.state.errorMessage}
+        />)
+    }
+
+    
 }
 
-export default contact;
+export default Contact;

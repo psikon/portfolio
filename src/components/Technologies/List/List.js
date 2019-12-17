@@ -15,9 +15,9 @@ const list = (props) => {
     const label = props.label ? <h2 className="subsection-header text-uppercase text-left">{props.label}</h2> : null;
     const techList = props.tech ? <div className="list-item">{props.items.map(item => <ListItem key={item} item={item} />)}</div>: null;
     const skillList = props.skills ? <div className="skill-list">{props.items.map(item => <ListItem key={item} item={item} />)}</div>: null;
-    const languageList = props.language ? <div className="double-list">{props.items.map(item => <DoubleListItem key={item.item} item={item.item} skill={item.skill} />)}</div> : null;
+    const languageList = props.language ? <div className="list-item double-list">{props.items.map(item => <DoubleListItem key={item.item} item={item.item} skill={item.skill} />)}</div> : null;
     return (
-        <div className="child fixed-width">
+        <div className="flex-item">
             <div className="row">
                 <div className="col-25">
                     {icon}

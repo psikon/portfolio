@@ -5,16 +5,23 @@
     display: flex;
     align-items: center;
     height: 100%;
-    flex-flow: column;
+    flex-flow: row;
     padding-right: 5rem;
 }
-
-.language-chooser {
-    padding: 0 5rem;
+.NavigationItems input {
+    padding: 16px 1rem;
+    border-bottom: 4px solid transparent;
 }
 
-@media (min-width: 500px) {
-    .NavigationItems {
-        flex-flow: row;
+.NavigationItems input:hover,
+.NavigationItems input:active,
+.NavigationItems input.active {
+    border-bottom: 4px solid #00bbff;
+    padding: 16px 1rem;
+}
+
+@media (max-width: 925px) {
+    .DesktopOnly {
+        display: none;
     }
 }

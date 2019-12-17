@@ -40,7 +40,7 @@ const data = {
     ide: [ "Eclipse", "IntelliJ IDEA","VSCode","TestComplete","RStudio"]
 }
 
-const skills = [
+const skills_en = [
     "Independence",
     "Solving problems by searching for information",
     "Desire to develop and expand knowledge",
@@ -52,27 +52,54 @@ const skills = [
     "Experience in agile development with SCRUM and Kanban"
 ]
 
-const languages = [
+const skills_de = [
+    "Selbständige Arbeitsweise",
+    "problemlösendes Denken",
+    "hohe Lernbereitschaft",
+    "Teamwork",
+    "Strukturierte Arbeitsweise",
+    "Ausdauernde Lösungssuche",
+    "Verantwortungsvoll",
+    "Kreativ",
+    "Erfahrungen in Agilen Entwicklungsmethoden"
+]
+
+const languages_en = [
     {item: "German", skill: "Native" },
     {item: "English", skill: "Fluent" },
     {item: "Spanish", skill: "Basic level"}]
 
+const languages_de = [
+        {item: "Deutsch", skill: "Muttersprache" },
+        {item: "Englisch", skill: "Fließend in Schrift und Wort" },
+        {item: "Spanisch", skill: "Grundkenntnisse"}]
 
 
 const technologies = (props) => {
+    const programming = (props.german) ? "Programmier- sprachen" : "Programming Languages";
+    const frameworks = (props.german) ? "Frameworks" : "Frameworks";
+    const databases = (props.german) ? "Datenbanken" : "Databases";
+    const software = (props.german) ? "Software" : "Software";
+    const deploy = (props.german) ? "Build und Deployment" : "Build and Deploy";
+    const os = (props.german) ? "Betriebs- systeme" : "Operating Systems";
+    const ide = (props.german) ? "Entwicklungs- umgebungen" : "Development Environment";
+    const vs = (props.german) ? "Versions- verwaltung" : "Version Control";
+    const skills = (props.german) ? skills_de : skills_en;
+    const languages = (props.german) ? languages_de : languages_en;
+
     return (
         <section id="technologies" className="light-background">
             <div className="Technologies">
                 <h2 className="section-header text-uppercase">Technologies</h2>
-                <div className="parent">
-                    <Matrix label="Languages" items={data.languages} icon={faCode} offset="3px"/> 
-                    <Matrix label="Frameworks" items= {data.framework} icon={faCog} offset="7px"/>
-                    <List label="Databases" items= {data.databases} icon={faDatabase} offset="8px" tech={true}/>
-                    <List label="Build and Deploy" items= {data.deploy} icon={faCogs} offset="2px" tech={true}/>
-                    <List label="Software" items= {data.software} icon={faWindowRestore} offset="5px" tech={true}/>
-                    <List label="Operating Systems" items= {data.operationSystems} icon={faDesktop} offset="5px" tech={true}/>
-                    <List label="Development Environment" items= {data.ide} icon={faCodepen} offset="5px" tech={true}/>
-                    <List label="Version Control" items= {data.vs} icon={faCodeBranch} offset="12px" tech={true}/>
+                <div className="flex-container">
+                    <Matrix label={programming} items={data.languages} icon={faCode} offset="3px"/> 
+                    <Matrix label={frameworks} items= {data.framework} icon={faCog} offset="6px"/>
+                    <List label={databases} items= {data.databases} icon={faDatabase} offset="8px" tech={true}/>
+                    <List label={deploy} items= {data.deploy} icon={faCogs} offset="2px" tech={true}/>
+                    <List label={software} items= {data.software} icon={faWindowRestore} offset="6px" tech={true}/>
+                    <List label={os} items= {data.operationSystems} icon={faDesktop} offset="5px" tech={true}/>
+                    <List label={ide} items= {data.ide} icon={faCodepen} offset="6px" tech={true}/>
+                    <List label={vs} items= {data.vs} icon={faCodeBranch} offset="12px" tech={true}/>
                 </div>
             </div>
             <div className="space">

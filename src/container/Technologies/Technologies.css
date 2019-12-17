@@ -1,26 +1,19 @@
-.Technologies .parent {
+.Technologies .flex-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 0px 100px;
 }
 
-.Technologies .child {
-    display: inline-block;
+.Technologies .flex-item {
     margin: 1% 1% 4% 4%;
-    flex-grow: 1;
-    flex: 1 0 20%;
+    width: 250px;
 }
 
 @media ( max-width :1050px) {
-	.Technologies .child {
-		flex: 1 0 8%;
-	}
-}
-
-@media ( max-width :1050px) {
-	.Technologies .child {
-		flex: 1 0 5%;
-	}
+    .Technologies .flex-container {
+        margin: 0px 50px;
+    }
 }
 
 .Technologies .row {

@@ -20,7 +20,7 @@ const en = {
     paragraph_2: "After four years I stopped my time as a full-time doctoral researcher and switched my focus to become a Software Developer. I could greatly expand my knowledge, mainly around Java development, and learned a lot about additional tools, that are needed as a modern Java Developer.",
     paragraph_3: "For the future I'm looking for interesting fields of activity.",
     paragraph_4: "I encourage you to read my portfolio and contact me.",
-    signature: "Sincerely,\nPhilipp Hennersdorf",
+    signature: "Sincerely, Philipp Hennersdorf",
 }
 
 const about = (props) => {
@@ -43,10 +43,10 @@ const about = (props) => {
         <section className="dark-background" id="about">
         <div className="About">
             <div className="About row">
-                <div className="col col-left">
-                    <AboutImage className="picture" width="175" picture={picture} caption={de.caption} />
+                <div className="col-left">
+                    <AboutImage className="picture" picture={picture} caption={de.caption} />
                 </div>
-                <div className="col col-right">
+                <div className="col-right">
                     {text}
                 </div>
             </div>

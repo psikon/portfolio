@@ -24,14 +24,14 @@ class App extends Component {
     
     return (
       <div className="App">
-        <ToolBar german={this.state.german} toggleLanguage={this.toggleLanguage}/>
-        <Header german={this.state.german}/>
-        <About german={this.state.german} />
-        <Technologies german={this.state.german}/>
-        <Experience german={this.state.german}/>
-        <Education german={this.state.german}/>
-        <Contact german={this.state.german}/>
-        <Footer german={this.state.german} />
+          <ToolBar german={this.state.german} toggleLanguage={this.toggleLanguage}/>
+          <Header german={this.state.german}/>
+          <About german={this.state.german} />
+          <Technologies german={this.state.german}/>
+          <Experience german={this.state.german}/>
+          <Education german={this.state.german}/>
+          <Contact german={this.state.german}/>
+          <Footer german={this.state.german} /> 
       </div>
     )
   };

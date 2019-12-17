@@ -6,9 +6,10 @@ import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 
 const doubleListItem = (props) => {
     return (
+        
         <div className="double-list-item">
-            <FontAwesomeIcon className="list-icon" icon={faCheckSquare} />
-            <p>{props.item} - {props.skill}</p> 
+            <span><FontAwesomeIcon className="list-icon" icon={faCheckSquare} /></span>
+            <span>{props.item} - {props.skill}</span>
         </div>   
     )
 }

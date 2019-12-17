@@ -1,20 +1,19 @@
 .list-item {
     text-align: left;
-    padding-left: 1em;
 	min-height: 1px;
-	padding-right: 15px;
-    padding-left: 15px
+	padding: 0px 15px;
 }
 
 .skill-list .list-item {
-    max-width: 200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: "column"
 }
 
 .double-list-item {
-    display: flex;
+    text-align: left;
 	min-height: 1px;
-	padding-right: 15px;
-    padding-left: 15px;
+    padding: 0px 15px;
 }
 
 
@@ -22,5 +21,5 @@
     color: #00aaff;
     width: 15;
     height: 15px;
-    padding: 7px 4px;
+    padding: 8px 8px 4px 0px;
 }

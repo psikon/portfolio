@@ -74,7 +74,7 @@ export const data =[
         time_de: "2013 - 2015",
         time_en: "2013 - 2015",
         logo: FsuLogo,
-        position_de: "Hilfestellung und Betreuung einer blinden Studentin",
+        position_de: "Wissenschaftlicher Mitarbeiter",
         position_en: "Research assistant",
         description_de: ["Hilfestellung und Betreuung einer blinden Studentin"],
         description_en: ["Support for a visually handicapped student"]

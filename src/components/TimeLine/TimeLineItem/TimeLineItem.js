@@ -21,14 +21,14 @@ const timeLineItem = (props) => {
             <div className="timeline-item-content">
                 <div className="timeline-header">
                     <p className="timeline-title">{time}</p>
-                    <p className="timeline-subtitle">{props.item.name},{props.item.destination}</p>
+                    <p className="timeline-subtitle">{props.item.name}, {props.item.destination}</p>
                     <p className="timeline-position"><strong>{position}</strong></p>
                 </div>
                     <div className="timeline-body">
                        {description}
                     </div>
                     <div className="timeline-image">
-                        <img className="image" src={props.item.logo} alt="hki logo" width="120"/>
+                        <img className="image" src={props.item.logo} alt="hki logo"/>
                     </div>
                 </div>
         </div>

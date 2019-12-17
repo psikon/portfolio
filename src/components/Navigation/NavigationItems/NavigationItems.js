@@ -7,26 +7,24 @@ import EnLogo from '../../../resources/englisch.jpg'
 
 const navigationItems = (props) => {
     const navigation = props.german ? (
-        <ul className="NavigationItems">
+        <ul className="NavigationItems DesktopOnly">
             <NavigationItem link="#technologies" >Technologien</NavigationItem>
             <NavigationItem link="#experience" >Berufserfahrung</NavigationItem>
             <NavigationItem link="#education" >Ausbildung</NavigationItem>
             <NavigationItem link="#contact" >Kontakt</NavigationItem>
             <input 
-                className=".language-chooser" 
                 type="image" 
                 src={DeLogo} 
                 alt="Wechsle Sprache" 
                 width="30"
                 onClick={props.toggleLanguage}/> 
         </ul>) : (
-        <ul className="NavigationItems">
+        <ul className="NavigationItems DesktopOnly">
             <NavigationItem link="#technologies" >Technologies</NavigationItem>
             <NavigationItem link="#experience" >Experience</NavigationItem>
             <NavigationItem link="#education" >Education</NavigationItem>
             <NavigationItem link="#contact" >Contact</NavigationItem>
             <input 
-                className=".language-chooser"
                 type="image" 
                 src={EnLogo} 
                 alt="Change language" 
