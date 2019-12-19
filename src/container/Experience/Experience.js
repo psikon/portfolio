@@ -52,10 +52,11 @@ export const data =[
         name: "Leibniz Institute for Natural Product Research and Infection Biology Hans-Knöll-Institute",
         destination: "Jena",
         time: "2012 - 2015",
-        position: "Doctoral Reasearcher",
+        position_de: "Wissenschaftlicher Mitarbeiter",
+        position_en: "Doctoral Reasearcher",
         logo: HkiLogo,
         description_de: [
-            "Biologische und statistische Asuwertung von Genomsequenzdatensätzen",
+            "Biologische und statistische Auswertung von Genomsequenzdatensätzen",
             "Erstellung von wissentschaftlichen Publikationen",
             "Durchführung von Vorlesungen und Seminaren",
             "Betreuung von internationalen Masterstudenten"

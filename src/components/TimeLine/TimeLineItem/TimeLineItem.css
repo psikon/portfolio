@@ -106,12 +106,12 @@
     width: 120px;
     height: 120px;
     top: calc(50% - 65px);
-    right: -165px;
+    left: calc(0% - 65px);
 }
 
 .timeline-item:nth-child(odd) .timeline-image {
-    right: auto;
-    left: -165px;
+    right:auto;
+    left: calc(10% - 2px);
 }
 
 .image {
@@ -121,41 +121,20 @@
     width:120px
 }
 
-@media ( max-width :768px) {
+@media ( max-width :990px) {
 	.timeline-item {
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 15px;
-        position: relative;
         margin: 5px 0;
         width: 100%;
     }
     
     .timeline-item:nth-child(odd) {
-        align-self: flex-end;
         justify-content: flex-end;
-        padding-left: 0px;
-        padding-right: 0;
-    }
-    
-    .timeline-item-content {
-        border-radius: 5px;
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        padding: 25px;
-        position: relative;
-        width: 400px;
-        max-width: 70%;
-        margin-right: 120px;
     }
     
     .timeline-item-content::after {
-        position: absolute;
-        right: -7.5px;
-        top: calc(50% - 7.5px);
-        width: 15px;
-        height: 15px;
+        right: auto;
+        left: -7.5px;
+        box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
     }
     
     .timeline-item:nth-child(odd) .timeline-item-content {
@@ -164,24 +143,63 @@
         margin-left: 80px;
     }
     
-    .timeline-item:nth-child(odd) .timeline-item-content::after {
-        right: auto;
+    .timeline-image {
+        width: 70px;
+        height: 70px;
+    }
+    .timeline-item .timeline-image {
+    }
+
+    .timeline-item:nth-child(odd) .timeline-image {
+        margin-left: 1%;
+    }
+
+    .image {
+        width:70px
+    }
+
+}
+
+@media ( max-width: 500px) {
+	.timeline-item {
+        align-self: flex-end;
+        justify-content: flex-end;
+        padding: 0 0;
+    }
+
+    .timeline-item-content::after {
+        right:auto;
         left: -7.5px;
         box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
     }
+    
+    .timeline-item-content {
+        flex-direction: column;
+        padding: 15px;
+        max-width: 80%;
+        margin-right: 5px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-item-content {
+        margin-left: 40px;
+    }
 
-    
-    .timeline-image {
-        text-align: left;
-        width: 80px;
-        height: 80px;
-    }
-    
     .timeline-item:nth-child(odd) .timeline-image {
-        margin-left: 65px;
+        margin-left: 30%;
+        margin-top: 10%;
+        width: 50px;
+        height: 50px;
     }
+
+    .timeline-item .timeline-image {
+        margin-left: 0%;
+        margin-top: 10%;
+        width: 50px;
+        height: 50px;
+    }
+
     .image {
-        width:80px
+        width:50px
     }
 }
 

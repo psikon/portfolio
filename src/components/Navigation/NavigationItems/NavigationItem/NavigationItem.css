@@ -22,20 +22,14 @@
 .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a.active {
-    text-transform: uppercase !important;
-    border-bottom: 4px solid #00bbff;
+    border-bottom: 3px solid #00bbff;
     color: white;
 }
 
-@media (max-width: 1120px) {
-    .NavigationItem a {
-        padding: 16px 5px;
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 1050px) {
-    .NavigationItem a {
-        font-size: 17px;
+@media (max-width:990px) {
+    .NavigationItem a:hover,
+    .NavigationItem a:active,
+    .NavigationItem a.active {
+        border-bottom: 0;
     }
 }

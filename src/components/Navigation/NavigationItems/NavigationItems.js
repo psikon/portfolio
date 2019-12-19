@@ -31,6 +31,7 @@ const navigationItems = (props) => {
                 width="30"
                 onClick={props.toggleLanguage}/> 
         </ul>);
+        
     return navigation;
 };
 

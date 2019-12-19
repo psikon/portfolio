@@ -6,7 +6,6 @@
     align-items: center;
     height: 100%;
     flex-flow: row;
-    padding-right: 5rem;
 }
 .NavigationItems input {
     padding: 16px 1rem;
@@ -16,12 +15,15 @@
 .NavigationItems input:hover,
 .NavigationItems input:active,
 .NavigationItems input.active {
-    border-bottom: 4px solid #00bbff;
+    border-bottom: 3px solid #00bbff;
     padding: 16px 1rem;
 }
 
-@media (max-width: 925px) {
-    .DesktopOnly {
-        display: none;
-    }
+@media (max-width:990px) {
+    .NavigationItems input:hover,
+    .NavigationItems input:active,
+    .NavigationItems input.active {
+    border-bottom: 0;
+}
+
 }

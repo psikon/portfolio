@@ -75,3 +75,25 @@
   background-color: transparent;
 }
 
+@media (max-width:990px) {
+    .Header {
+        height: 400px;
+    }
+
+    .Header .welcome {
+        padding-top: 60px;
+        padding-bottom: 30px
+    }
+    
+    .Header .title {
+        line-height: 50px;
+        margin-bottom: 25px;
+        font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif
+    }
+    
+    .Header .subtitle {
+        margin: .4rem 0;
+        padding-bottom: 1.5rem;
+    } 
+}
+
