@@ -10,7 +10,7 @@ import { faXing } from '@fortawesome/free-brands-svg-icons'
 const headerComp = (props) => {
     
     return (
-        <section className="Header" id="home">
+        <section className="Header" id="header">
             <div className="Header">
                 <p className="welcome">{props.welcome}</p>
                 <h1 className="section-heading font-weight-bold title">Philipp Hennersdorf</h1>

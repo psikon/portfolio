@@ -25,7 +25,7 @@ const sideDrawer = (props) => {
         sideDrawerClasses = "SideDrawer Open"
         navigationClasses = "NavigationItems MobileOnly Open"
     }
-    console.log(sideDrawerClasses)
+
     return(
         <Aux>
             <BackDrop 

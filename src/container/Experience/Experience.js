@@ -18,11 +18,17 @@ export const data =[
         logo: EncowayLogo,
         description_de: [
             "Frontend Entwicklung mit React",
-            "Modifikation und Erweiterung einer bestenhenden Softwarelösung"
+            "Modifikation und Erweiterung einer bestehenden Softwarelösung",
+            "Anwendung agiler Arbeitsweisen nach Kanban und Scrum",
+            "Softwareentwickler im Service",
+            "Mitwirkung an der Ausbildung zum Anwendungsinformatiker"
         ],
         description_en: [
             "Frontend devolopment with React",
-            "Modification and Extension of Software"
+            "Modification and Extension of an existing software solution",
+            "Practice of agile methods like Kanban and Scrum",
+            "Software Developer in a Service team",
+            "Involved in training of new students"
         ]
     },
     {   

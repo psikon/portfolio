@@ -135,6 +135,7 @@
     
     .timeline-item-content,
     .timeline-item-content:nth-child(odd){
+        flex-shrink: 0;
         width: 80%;
         max-width: 80%;
         min-width: 80%;

@@ -44,24 +44,24 @@ const skills_en = [
     "Independence",
     "Solving problems by searching for information",
     "Desire to develop and expand knowledge",
-    "Teamwork",
     "Structured working",
     "Perserverance in the pursiut of the target",
     "Responsibility",
     "Creativity",
-    "Experience in agile development with SCRUM and Kanban"
+    "Experience in agile development with SCRUM and Kanban",
+    "Teamwork",
 ]
 
 const skills_de = [
     "Selbständige Arbeitsweise",
     "problemlösendes Denken",
     "hohe Lernbereitschaft",
-    "Teamwork",
     "Strukturierte Arbeitsweise",
     "Ausdauernde Lösungssuche",
     "Verantwortungsvoll",
+    "Erfahrungen in Agilen Entwicklungsmethoden",
+    "Teamwork",
     "Kreativ",
-    "Erfahrungen in Agilen Entwicklungsmethoden"
 ]
 
 const languages_en = [
@@ -81,7 +81,7 @@ const technologies = (props) => {
     const databases = (props.german) ? "Datenbanken" : "Databases";
     const software = (props.german) ? "Software" : "Software";
     const deploy = (props.german) ? "Build und Deployment" : "Build and Deploy";
-    const os = (props.german) ? "Betriebs- systeme" : "Operating Systems";
+    const os = (props.german) ? "Betriebssysteme" : "Operating Systems";
     const ide = (props.german) ? "Entwicklungs- umgebungen" : "Development Environment";
     const vs = (props.german) ? "Versions- verwaltung" : "Version Control";
     const skills = (props.german) ? skills_de : skills_en;

@@ -16,6 +16,7 @@
 }
 
 .Footer .copyright {
+    flex-shrink: 2;
     padding-top: 15px;
     font-size: 16px;
 }

@@ -21,7 +21,6 @@ class App extends Component {
     this.setState({german: !language})
   }
   render() {
-    
     return (
       <div className="App">
           <Layout german={this.state.german} toggleLanguage={this.toggleLanguage}>

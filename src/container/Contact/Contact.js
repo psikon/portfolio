@@ -1,5 +1,4 @@
 import React,{ Component } from 'react';
-import axios from "axios";
 
 import ContactForm from '../../components/Contact/ContactForm';
 
@@ -38,8 +37,7 @@ class Contact extends Component {
 
 
     handleOnSubmit = event => {
-        const templateId = 'template_id';
-
+        const templateId = 'template_RzEe2zxf';
 	    this.sendFeedback(templateId, {message_html: this.state.inputs.message, from_name: this.state.inputs.name, reply_to: this.state.inputs.email})
       };
 

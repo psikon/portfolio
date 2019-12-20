@@ -34,7 +34,7 @@ const footerComp = (props) => {
                     </li>
                 </ul>
             </div>
-            <AnchorLink className="btn-primary" href="#about">{props.button}</AnchorLink>
+            <AnchorLink className="btn-primary" href="#header">{props.button}</AnchorLink>
         </div>
     )
 }
