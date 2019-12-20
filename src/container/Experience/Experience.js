@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './Experience.css';
 import TimeLine from '../../components/TimeLine/TimeLine';
 import EncowayLogo from '../../resources/encoway-logo.jpg';
 import BrukerLogo from '../../resources/bruker-logo.jpg';

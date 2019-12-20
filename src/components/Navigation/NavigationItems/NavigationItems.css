@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    flex-flow: row;
+    flex-flow: row wrap;
 }
 .NavigationItems input {
     padding: 16px 1rem;

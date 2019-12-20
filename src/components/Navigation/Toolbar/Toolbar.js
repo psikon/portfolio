@@ -11,7 +11,7 @@ const toolbar = (props) => {
         return (
             <section className="Toolbar" id="toolbar">
                 <header className="Toolbar">
-                    <DrawerToogle clicked={props.drawerToggleClicked}/>
+                    <DrawerToogle className="MobileOnly" clicked={props.drawerToggleClicked}/>
                     <AnchorLink className="AnchorLink" href="#home"><h2>Philipp Hennersdorf</h2></AnchorLink>
                     <nav>
                         <NavigationItems german={props.german} toggleLanguage={props.toggleLanguage}/>

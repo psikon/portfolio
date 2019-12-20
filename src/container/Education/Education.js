@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './Education.css';
 import TimeLine from '../../components/TimeLine/TimeLine';
 import HkiLogo from '../../resources/hki-logo.jpg'
 import FsuLogo from '../../resources/fsu-logo.jpg'

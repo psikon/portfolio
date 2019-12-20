@@ -10,34 +10,29 @@
     width: 250px;
 }
 
+.Technologies .row {
+	display: flex;
+	margin-right: -15px;
+    margin-left: -15px;
+    height: 64px;
+}
+
+.Technologies .col-25 {
+    text-align: left;
+    flex: 0 0 20%;
+    margin-top: 15px;
+}
+
+.Technologies .col-75 {
+    flex: 0 0 80%;
+}
+
 @media ( max-width :1050px) {
     .Technologies .flex-container {
         margin: 0px 50px;
     }
 }
 
-.Technologies .row {
-    display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	margin-right: -15px;
-    margin-left: -15px;
-    height:64px;
-}
-
-.Technologies .col-25 {
-    text-align: left;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
-    margin-top: 15px;
-}
-
-.Technologies .col-75 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 80%;
-    flex: 0 0 80%;
-}
 
 
 
