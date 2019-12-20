@@ -19,19 +19,21 @@ const sideDrawer = (props) => {
     const logo = (props.german) ? DeLogo : EnLogo
     const languageAlt = (props.german) ? "Englisch" : "Deutsch";
 
-    let cssClasses = "SideDrawer Close";
+    let sideDrawerClasses = "SideDrawer Close";
+    let navigationClasses = "NavigationItems MobileOnly Close"
     if (props.open) {
-        cssClasses = "SideDrawer Open"
+        sideDrawerClasses = "SideDrawer Open"
+        navigationClasses = "NavigationItems MobileOnly Open"
     }
-    console.log(cssClasses)
+    console.log(sideDrawerClasses)
     return(
         <Aux>
             <BackDrop 
                 show={props.open} 
                 clicked={props.closed}/>
-            <div className={cssClasses}>
+            <div className={sideDrawerClasses}>
                 <nav>
-                    <ul className="NavigationItems MobileOnly">
+                    <ul className={navigationClasses}>
                         <div>
                             <NavigationItem link="#technologies" >{technologies}</NavigationItem>
                             <NavigationItem link="#experience" >{experience}</NavigationItem>

@@ -45,7 +45,17 @@
     transform: translateX(-100%);
 }
 
-.Logo {
-    height:11%;
-    margin-bottom: 32px;
+@media(max-width:500px) {
+    .SideDrawer {
+        min-width:50%;
+        max-width: 50%;
+    }
 }
+
+@media(max-width:990px) {
+    .SideDrawer {
+        min-width:30%;
+        max-width: 35%;
+    }
+}
+

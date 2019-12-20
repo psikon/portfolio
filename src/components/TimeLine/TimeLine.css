@@ -1,3 +1,7 @@
+.timeline-wrapper {
+    width:100%;
+}
+
 .timeline-container {
     display: flex;
     flex-direction: column;
@@ -14,6 +18,27 @@
 }
 
 @media (max-width:990px) {
+    .timeline-wrapper {
+        width:768px;
+    }
+
+    .timeline-container::after {
+        left: calc(10% - 2px);
+        width: 2px;
+    }
+}
+
+@media (max-width:768px) {
+    .timeline-wrapper {
+        width:500px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .timeline-wrapper {
+        width:375px;
+    }
     .timeline-container::after {
         left: calc(10% - 2px);
         width: 2px;
