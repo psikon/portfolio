@@ -7,12 +7,13 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faXing } from '@fortawesome/free-brands-svg-icons'
 
+
 const footerComp = (props) => {
     return (
         <div className="content" >
             <div className="text-center copyright">
-                <p>Copyright &copy; Philipp Hennersdorf</p>
-                <p>{props.year}</p>
+                <p>Copyright &copy; {props.name}</p>
+                <p>{props.update}</p>
                 <p>Photo by Clément H on Unsplash</p>
             </div>
             <div className="list-inline text-center social-buttons">

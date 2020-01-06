@@ -1,6 +1,8 @@
 import React,{ Component } from 'react';
 
 import ContactForm from '../../components/Contact/ContactForm';
+import {translations_de} from '../../resources/translations_de';
+import {translations} from '../../resources/translations';
 
 class Contact extends Component {
 
@@ -53,11 +55,11 @@ class Contact extends Component {
       }
     
     render() {
-        const title = (this.props.german) ? "Kontakt" : "Contact";
-        const name = (this.props.german) ? "Ihr Name": "Your name";
-        const email = (this.props.german) ? "Ihre E-Mail Adresse" : "Your e-mail address";
-        const message = (this.props.german) ? "Ihre Nachricht" : "Your message";
-        const sendButton = (this.props.german) ? "Sende Nachricht" : "Send message";
+        const title = (this.props.german) ? translations_de.contact.title : translations.contact.title;
+        const name = (this.props.german) ? translations_de.contact.name : translations.contact.name;
+        const email = (this.props.german) ? translations_de.contact.email : translations.contact.email;
+        const message = (this.props.german) ? translations_de.contact.message : translations.contact.message;
+        const sendButton = (this.props.german) ? translations_de.contact.send : translations.contact.send;
 
         return (<ContactForm 
             title={title} 

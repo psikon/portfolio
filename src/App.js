@@ -13,7 +13,7 @@ import Footer from './container/Footer/Footer';
 class App extends Component {
 
   state = {
-    german: true
+    german: false
   }
 
   toggleLanguage = () => {

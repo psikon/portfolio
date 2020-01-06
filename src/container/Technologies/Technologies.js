@@ -11,95 +11,34 @@ import { faCodeBranch} from '@fortawesome/free-solid-svg-icons'
 import { faWindowRestore} from '@fortawesome/free-solid-svg-icons'
 import { faDesktop} from '@fortawesome/free-solid-svg-icons'
 import { faCodepen} from '@fortawesome/free-brands-svg-icons'
-
-const data = {
-    languages: [
-        {item: "Java", skill: 5},
-        {item: "Python", skill: 3},
-        {item: "React", skill: 3},
-        {item: "R", skill: 4},
-        {item: "VBScript", skill: 2}
-    ],
-    framework: [ 
-        {item: "Spring", skill: 5},
-        {item: "Hibernate", skill: 4},
-        {item: "Eclipse e4", skill: 4}
-    ],
-    deploy: ["Maven","Jenkins","Bamboo","Docker"
-    ],
-    software: [
-        "Micosoft Office",
-        "Jira",
-        "Confluence",
-        "Sonar",
-        "LaTex"
-    ],
-    databases: ["PostgreSQL","MySQL", "MSSQL"],
-    operationSystems : ["Windows","Mac OSX","Linux"],
-    vs: ["git", "svn"],
-    ide: [ "Eclipse", "IntelliJ IDEA","VSCode","TestComplete","RStudio"]
-}
-
-const skills_en = [
-    "Independence",
-    "Solving problems by searching for information",
-    "Desire to develop and expand knowledge",
-    "Structured working",
-    "Perserverance in the pursiut of the target",
-    "Responsibility",
-    "Creativity",
-    "Experience in agile development with SCRUM and Kanban",
-    "Teamwork",
-]
-
-const skills_de = [
-    "Selbständige Arbeitsweise",
-    "problemlösendes Denken",
-    "hohe Lernbereitschaft",
-    "Strukturierte Arbeitsweise",
-    "Ausdauernde Lösungssuche",
-    "Verantwortungsvoll",
-    "Erfahrungen in Agilen Entwicklungsmethoden",
-    "Teamwork",
-    "Kreativ",
-]
-
-const languages_en = [
-    {item: "German", skill: "Native" },
-    {item: "English", skill: "Fluent" },
-    {item: "Spanish", skill: "Basic level"}]
-
-const languages_de = [
-        {item: "Deutsch", skill: "Muttersprache" },
-        {item: "Englisch", skill: "Fließend in Schrift und Wort" },
-        {item: "Spanisch", skill: "Grundkenntnisse"}]
-
+import { translations_de } from '../../resources/translations_de';
+import { translations } from '../../resources/translations';
 
 const technologies = (props) => {
-    const programming = (props.german) ? "Programmier- sprachen" : "Programming Languages";
-    const frameworks = (props.german) ? "Frameworks" : "Frameworks";
-    const databases = (props.german) ? "Datenbanken" : "Databases";
-    const software = (props.german) ? "Software" : "Software";
-    const deploy = (props.german) ? "Build und Deployment" : "Build and Deploy";
-    const os = (props.german) ? "Betriebssysteme" : "Operating Systems";
-    const ide = (props.german) ? "Entwicklungs- umgebungen" : "Development Environment";
-    const vs = (props.german) ? "Versions- verwaltung" : "Version Control";
-    const skills = (props.german) ? skills_de : skills_en;
-    const languages = (props.german) ? languages_de : languages_en;
+    const programming = (props.german) ? translations_de.technologies.label.programming : translations.technologies.label.programming;
+    const frameworks = (props.german) ?  translations_de.technologies.label.frameworks : translations.technologies.label.frameworks;
+    const databases = (props.german) ?  translations_de.technologies.label.databases : translations.technologies.label.databases;
+    const software = (props.german) ?  translations_de.technologies.label.software : translations.technologies.label.software;
+    const deploy = (props.german) ? translations_de.technologies.label.deploy : translations.technologies.label.deploy;
+    const os = (props.german) ? translations_de.technologies.label.os : translations.technologies.label.os;
+    const ide = (props.german) ? translations_de.technologies.label.ide : translations.technologies.label.ide;
+    const vs = (props.german) ? translations_de.technologies.label.vs : translations.technologies.label.vs;
+    const skills = (props.german) ? translations_de.technologies.skills : translations.technologies.skills;
+    const languages = (props.german) ? translations_de.technologies.languages : translations.technologies.languages;
 
     return (
         <section id="technologies" className="light-background">
             <div className="Technologies">
                 <h2 className="section-header text-uppercase">Technologies</h2>
                 <div className="flex-container">
-                    <Matrix label={programming} items={data.languages} icon={faCode} offset="3px"/> 
-                    <Matrix label={frameworks} items= {data.framework} icon={faCog} offset="6px"/>
-                    <List label={databases} items= {data.databases} icon={faDatabase} offset="8px" tech={true}/>
-                    <List label={deploy} items= {data.deploy} icon={faCogs} offset="2px" tech={true}/>
-                    <List label={software} items= {data.software} icon={faWindowRestore} offset="6px" tech={true}/>
-                    <List label={os} items= {data.operationSystems} icon={faDesktop} offset="5px" tech={true}/>
-                    <List label={ide} items= {data.ide} icon={faCodepen} offset="6px" tech={true}/>
-                    <List label={vs} items= {data.vs} icon={faCodeBranch} offset="12px" tech={true}/>
+                    <Matrix label={programming} items={translations.technologies.programming} icon={faCode} offset="3px"/> 
+                    <Matrix label={frameworks} items= {translations.technologies.framework} icon={faCog} offset="6px"/>
+                    <List label={databases} items= {translations.technologies.databases} icon={faDatabase} offset="8px" tech={true}/>
+                    <List label={deploy} items= {translations.technologies.deploy} icon={faCogs} offset="2px" tech={true}/>
+                    <List label={software} items= {translations.technologies.software} icon={faWindowRestore} offset="6px" tech={true}/>
+                    <List label={os} items= {translations.technologies.operationSystems} icon={faDesktop} offset="5px" tech={true}/>
+                    <List label={ide} items= {translations.technologies.ide} icon={faCodepen} offset="6px" tech={true}/>
+                    <List label={vs} items= {translations.technologies.vs} icon={faCodeBranch} offset="12px" tech={true}/>
                 </div>
             </div>
             <div className="space">

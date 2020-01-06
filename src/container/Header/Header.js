@@ -1,21 +1,24 @@
 import React from 'react';
 
 import HeaderComponent from '../../components/Header/HeaderComponent';
+import {translations_de} from '../../resources/translations_de';
+import {translations} from '../../resources/translations';
+import { GITHUB_REPO, LINKED_IN, XING} from '../../resources/Constants';
+
 
 const Header = (props) => {
-    const welcome = (props.german) ? "Willkommen zu meinem Portfolio" : "Welcome to my portfolio";
-    const more = (props.german) ? "Weiterlesen" : "Read more";
-    const title = (props.german) ? "Dr. rer. nat. Bioinformatiker" : "Dr. rer. nat. Bioinformatic";
-    const githubUrl = "https://github.com/psikon";
-    const linkedInUrl ="https://www.linkedin.com/in/philipp-hennersdorf-282033104/"
-    const xingUrl = "https://www.xing.com/profile/Philipp_Hennersdorf/cv?sc_o=mxb_p"
+
+    const welcome = (props.german) ? translations_de.header.welcome : translations.header.welcome;
+    const more = (props.german) ? translations_de.header.more : translations.header.more;
+    const title = (props.german) ? translations_de.header.title : translations.header.title;
+
     return <HeaderComponent 
         welcome={welcome}
         title={title}
         more={more}
-        github={githubUrl}
-        linkedIn={linkedInUrl}
-        xing={xingUrl}/>
+        github={GITHUB_REPO}
+        linkedIn={LINKED_IN}
+        xing={XING}/>
 }
 
 export default Header;
