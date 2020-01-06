@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.953b81e1.chunk.css",
+    "main.js": "/portfolio/static/js/main.9a339d78.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9a339d78.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.86a05020.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.86a05020.js.map",
+    "static/js/2.b04eee50.chunk.js": "/portfolio/static/js/2.b04eee50.chunk.js",
+    "static/js/2.b04eee50.chunk.js.map": "/portfolio/static/js/2.b04eee50.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.d5817a261356dfd13bd1aab7f63565dc.js": "/portfolio/precache-manifest.d5817a261356dfd13bd1aab7f63565dc.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.953b81e1.chunk.css.map": "/portfolio/static/css/main.953b81e1.chunk.css.map",
+    "static/media/Header.css": "/portfolio/static/media/background.a1f31fae.jpg",
+    "static/media/fsu-logo.jpg": "/portfolio/static/media/fsu-logo.20eaa1e2.jpg",
+    "static/media/hki-logo.jpg": "/portfolio/static/media/hki-logo.09d43fa8.jpg",
+    "static/media/me.jpg": "/portfolio/static/media/me.aa852ded.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86a05020.js",
+    "static/js/2.b04eee50.chunk.js",
+    "static/css/main.953b81e1.chunk.css",
+    "static/js/main.9a339d78.chunk.js"
+  ]
+}
