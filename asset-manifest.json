@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.953b81e1.chunk.css",
+    "main.css": "/portfolio/static/css/main.fdcf2f9c.chunk.css",
     "main.js": "/portfolio/static/js/main.8eec5477.chunk.js",
     "main.js.map": "/portfolio/static/js/main.8eec5477.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.86a05020.js",
@@ -8,9 +8,9 @@
     "static/js/2.b04eee50.chunk.js": "/portfolio/static/js/2.b04eee50.chunk.js",
     "static/js/2.b04eee50.chunk.js.map": "/portfolio/static/js/2.b04eee50.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.32e65432b657e7ba6a496d7acd34e77b.js": "/portfolio/precache-manifest.32e65432b657e7ba6a496d7acd34e77b.js",
+    "precache-manifest.de0147be7b7be16f2f135bece68d21e3.js": "/portfolio/precache-manifest.de0147be7b7be16f2f135bece68d21e3.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.953b81e1.chunk.css.map": "/portfolio/static/css/main.953b81e1.chunk.css.map",
+    "static/css/main.fdcf2f9c.chunk.css.map": "/portfolio/static/css/main.fdcf2f9c.chunk.css.map",
     "static/media/Header.css": "/portfolio/static/media/background.a1f31fae.jpg",
     "static/media/fsu-logo.jpg": "/portfolio/static/media/fsu-logo.20eaa1e2.jpg",
     "static/media/hki-logo.jpg": "/portfolio/static/media/hki-logo.09d43fa8.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.86a05020.js",
     "static/js/2.b04eee50.chunk.js",
-    "static/css/main.953b81e1.chunk.css",
+    "static/css/main.fdcf2f9c.chunk.css",
     "static/js/main.8eec5477.chunk.js"
   ]
 }
