@@ -5,10 +5,9 @@
 }
 
 .skill-list .list-item {
-    flex-grow: 1;
+    flex: 1 1 400px;
     padding-right: 15px;
     padding-left: 15px;
-    max-width: 250px;
 }
 
 .double-list-item {
