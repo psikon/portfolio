@@ -55,7 +55,7 @@ export const translations_de =  {
                 logo: EncowayLogo,
                 description: [
                     "Frontend Entwicklung mit React",
-                    "Modifikation und Erweiterung einer bestehenden Softwarelösung",
+                    "Modifikation und Erweiterung bestehender Softwarelösungen",
                     "Anwendung agiler Arbeitsweisen nach Kanban und Scrum",
                     "Softwareentwickler im Service",
                     "Mitwirkung an der Ausbildung zum Anwendungsinformatiker"

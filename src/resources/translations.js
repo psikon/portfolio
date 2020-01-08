@@ -95,12 +95,12 @@ export const translations =  {
                 id: 4,
                 name: "encoway GmbH",
                 destination: "Bremen",
-                time: "2018 - heute",
+                time: "2018 - now",
                 position:"Software Developer",
                 logo: EncowayLogo,
                 description: [
-                    "Frontend devolopment with React",
-                    "Modification and Extension of an existing software solution",
+                    "Frontend development with React",
+                    "Modification and Extension of existing software solutions",
                     "Practice of agile methods like Kanban and Scrum",
                     "Software Developer in a Service team",
                     "Involved in training of new students"
