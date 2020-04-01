@@ -15,7 +15,7 @@ const headerComp = (props) => {
                 <p className="welcome">{props.welcome}</p>
                 <h1 className="section-heading font-weight-bold title">Philipp Hennersdorf</h1>
                 <h2 className="subsection-header font-weight-normal subtitle">{props.title}</h2>
-                <AnchorLink className="btn-primary" href="#about">{props.more}</AnchorLink>
+                <AnchorLink className="btn-primary read-more" href="#about">{props.more}</AnchorLink>
                 <div className="list-inline text-center social-buttons">
                     <ul>
                         <li className="list-inline-item text-center">

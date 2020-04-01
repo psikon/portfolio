@@ -51,6 +51,12 @@
     border: 2px solid darkgray;
 }
 
+.ContactForm .btn-primary:hover:disabled {
+    color: darkgray;
+    border: 2px solid darkgray !important;
+    background-color: transparent !important;
+}
+
 
 @media (min-width: 600px) {
     .ContactForm {

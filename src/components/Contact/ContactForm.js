@@ -2,6 +2,7 @@ import React from 'react';
 import './ContactForm.css';
 
 const contactForm = (props) => {
+
     return (
     <section className="dark-background" id="contact">
         <div className="Contact">

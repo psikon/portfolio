@@ -1,14 +1,10 @@
 .About {
     width: 100%;
 	padding: 0 15px;
-	margin-right: auto;
-	margin-left: auto
 }
 
 .About .row {
 	display: flex;
-	flex-flow: row wrap;
-	width: 100%;
 	padding: 0 25px;
 }
 
@@ -34,7 +30,6 @@
 	}
 
 	.About .row {
-		display: flex;
 		flex-flow: column wrap;
 		padding: 0 10px;
 	}
@@ -50,7 +45,6 @@
 
 	.About .col-right {
 		margin: 15px 15px;
-		padding-right: 50px;
 		max-width: 90%
 	}
 }

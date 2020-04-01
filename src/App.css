@@ -131,9 +131,11 @@ section {
 	letter-spacing: 2px;
 }
 
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-	background-color: #66c2ff !important;
-	border-color: #66c2ff !important;
+.btn-primary:active, 
+.btn-primary:focus, 
+.btn-primary:hover {
+	background-color: #66c2ff ;
+	border-color: #66c2ff ;
 	color: #fff
 }
 

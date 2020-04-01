@@ -1,8 +1,10 @@
 import React,{ Component } from 'react';
 
 import ContactForm from '../../components/Contact/ContactForm';
+import * as emailjs from 'emailjs-com'
 import {translations_de} from '../../resources/translations_de';
 import {translations} from '../../resources/translations';
+import Modal from '../../components/UI/Modal/Modal';
 
 class Contact extends Component {
 
@@ -15,15 +17,17 @@ class Contact extends Component {
                 message: ""
             },
             status: true,
+            showModal: false,
             errorMessage: null
         }
         this.handleOnChange = this.handleOnChange.bind(this);
-	    this.handleOnSubmit = this.handleOnSubmit.bind(this);
+        this.handleOnSubmit = this.handleOnSubmit.bind(this);
+        this.toggleModal = this.toggleModal.bind(this);
+        this.resetForm = this.resetForm.bind(this);
     }
 
     toggleSubmitButton = (event) => {
         if (this.state.inputs.name === '' || this.state.inputs.email === '' || this.state.inputs.message === '') {
-           
             return "disabled";
         }
         return ""
@@ -34,25 +38,41 @@ class Contact extends Component {
         this.setState({
             inputs: input
         });
-        console.log(this.state)
     }
 
 
-    handleOnSubmit = event => {
-        const templateId = 'template_RzEe2zxf';
-	    this.sendFeedback(templateId, {message_html: this.state.inputs.message, from_name: this.state.inputs.name, reply_to: this.state.inputs.email})
-      };
+    handleOnSubmit(event) {
+        event.preventDefault();
+        console.log("begin");
+        emailjs.send(
+            'psikon86_gmail_com', 
+            'template_RzEe2zxf', 
+            {message_html: this.state.inputs.message, from_name: this.state.inputs.name, reply_to: this.state.inputs.email},
+            'user_i0jbvS3b2UFuIchcJ92YI'
+          ).then((response) => {
+              this.setState({showModal:true})
+              this.resetForm()
+         }, (err) => {
+            alert(err);
+            console.log('FAILED...', err);
+         });
+         
+        };
 
-    sendFeedback (templateId, variables) {
-        window.emailjs.send(
-          'gmail', templateId,
-          variables
-          ).then(res => {
-            console.log('Email successfully sent!')
-          })
-          // Handle errors here however you like, or use a React error boundary
-          .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
-      }
+    toggleModal() {
+        const show = !this.state.showModal;
+        this.setState({showModal: show})
+    }
+
+    resetForm() {
+        this.setState({
+            inputs: {
+                name: "",
+                email: "",
+                message: ""
+            }
+        })
+    }
     
     render() {
         const title = (this.props.german) ? translations_de.contact.title : translations.contact.title;
@@ -61,19 +81,24 @@ class Contact extends Component {
         const message = (this.props.german) ? translations_de.contact.message : translations.contact.message;
         const sendButton = (this.props.german) ? translations_de.contact.send : translations.contact.send;
 
-        return (<ContactForm 
-            title={title} 
-            value={this.state.inputs}
-            onChange={this.handleOnChange}
-            sendButton={sendButton}
-            sendStatus={this.toggleSubmitButton()}
-            onClickSend={this.handleOnSubmit}
-            namePlaceholder={name} 
-            emailPlaceholder={email} 
-            messagePlaceholder={message}
-            status={this.state.status}
-            errorMessage={this.state.errorMessage}
-        />)
+        return (
+            <div>  
+             {this.state.showModal ? <Modal text="Email successfully sent" onClick={this.toggleModal}/> :  null}
+             <ContactForm 
+                    title={title} 
+                    value={this.state.inputs}
+                    onChange={this.handleOnChange}
+                    sendButton={sendButton}
+                    sendStatus={this.toggleSubmitButton()}
+                    onClickSend={this.handleOnSubmit}
+                    namePlaceholder={name} 
+                    emailPlaceholder={email} 
+                    messagePlaceholder={message}
+                    status={this.state.status}
+                    errorMessage={this.state.errorMessage}
+            />
+            </div>
+        )
     }
 
     
