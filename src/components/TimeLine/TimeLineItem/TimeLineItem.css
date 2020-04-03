@@ -10,7 +10,6 @@
 .timeline-item:nth-child(odd) {
     align-self: flex-end;
     justify-content: flex-start;
-    padding-left: 30px;
     padding-right: 0;
     width:50%;
 }
@@ -124,7 +123,7 @@
 @media ( max-width :990px) {
     .timeline-item {
         margin: 1% 2%;
-        margin-right: 40px;
+        margin-right: 38px;
         width: 90%;
         padding: 0 30px;
     }
@@ -140,7 +139,6 @@
         max-width: 80%;
         min-width: 80%;
         margin-right:0;
-        margin-left: 0;
     }
 
     .timeline-item:nth-child(odd) .timeline-item-content {
@@ -196,8 +194,9 @@
         padding: 1% 1%;
     }
 
-    .timeline-item:nth-child(odd) .timeline-item-content {
-        margin-left: 53px;
+    .timeline-item:nth-child(odd)
+    .timeline-item-content {
+        margin-left: 51px;
     }
     
     .timeline-item .timeline-image,
@@ -235,4 +234,3 @@
         font-size: 0.7rem;
     }
 }
-
