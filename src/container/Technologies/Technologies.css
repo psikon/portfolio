@@ -2,7 +2,9 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin: 0px 50px;
+    margin: 0px auto;
+    max-width: 80rem;
+    
 }
 
 .Technologies .flex-item {
@@ -27,11 +29,6 @@
     flex: 0 0 80%;
 }
 
-@media ( max-width :1050px) {
-    .Technologies .flex-container {
-        margin: 0px 50px;
-    }
-}
 
 
 

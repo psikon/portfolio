@@ -43,9 +43,7 @@ const technologies = (props) => {
             </div>
             <div className="space">
                 <h2 className="technologies-header text-uppercase">Skills</h2>
-                <div className="parent">
                     <List items={skills} skills={true}/>
-                </div>
             </div>
             <div className="space">
                 <h2 className="technologies-header text-uppercase">Languages</h2>
